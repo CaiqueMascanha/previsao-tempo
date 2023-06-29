@@ -22,6 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("../img/SP.jpg");
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -92,4 +93,14 @@ body {
 
 .nuvens {
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 720px) {
+.container__pesquisa {
+  gap: 20px;
+  }
+
+  .container__pesquisa input {
+    width: 250px;
+  }
 }
