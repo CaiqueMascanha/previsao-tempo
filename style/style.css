@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --cinza: #DADDE2;
+  --fonte-principal: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--fonte-principal);
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/Captura\ de\ Tela\ \(5\).png");
+}
+
+.container {
+  background-color: var(--preto);
+  opacity: 0.8;
+  color: var(--branco);
+  border-radius: 12px;
+  padding: 1em;
+  font-size: 2rem;
+}
+
+.container__pesquisa {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+
+.container__pesquisa img {
+  width: 20px;
+}
+
+.container__pesquisa button {
+  background-color: var(--branco);
+  border: none;
+  border-radius: 50%;
+  scale: 2.5;
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+}
+
+.container__pesquisa button:hover {
+  scale: 2.8;
+  transition: 0.8s;
+}
