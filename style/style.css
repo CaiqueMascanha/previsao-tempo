@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/Captura\ de\ Tela\ \(5\).png");
+  background-image: url("../img/SP.jpg");
 }
 
 .container {
@@ -30,12 +30,14 @@ body {
   color: var(--branco);
   border-radius: 12px;
   padding: 1em;
-  font-size: 2rem;
+
 }
 
 .container__pesquisa {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
   margin: 1em;
 }
 
@@ -44,7 +46,7 @@ body {
 }
 
 .container__pesquisa button {
-  background-color: var(--branco);
+  background-color: var(--cinza);
   border: none;
   border-radius: 50%;
   scale: 2.5;
@@ -53,7 +55,41 @@ body {
   height: 20px;
 }
 
+.container__pesquisa input {
+  padding: 0.3em;
+  width: 350px;
+  border: none;
+  background-color: var(--cinza);
+  opacity: 0.3;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  align-self: flex-start;
+  color: var(--preto);
+  font-weight: 700;
+}
+
+
 .container__pesquisa button:hover {
-  scale: 2.8;
+  scale: 2.6;
   transition: 0.8s;
+}
+.container__pesquisa input:hover {
+  scale: 1.01;
+  transition: 0.8s;
+}
+
+.container__info h2{
+  padding: 0.5em 0 1.5em 0;
+}
+
+.container__info-add {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 1.5em 0;
+}
+
+.nuvens {
+  text-transform: capitalize;
 }
